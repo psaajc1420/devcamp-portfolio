@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/psaajc1420/c_view_tool.git
+  revision: 6672ee254b1b14c9573a9cc4d46065a1170701c4
+  specs:
+    c_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -42,6 +48,9 @@ GEM
     autoprefixer-rails (7.2.5)
       execjs
     bcrypt (3.1.11)
+    bcrypt (3.1.11-java)
+    bcrypt (3.1.11-x64-mingw32)
+    bcrypt (3.1.11-x86-mingw32)
     bindex (0.5.0)
     bootstrap (4.0.0)
       autoprefixer-rails (>= 6.0.3)
@@ -207,6 +216,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap (~> 4.0.0)
   byebug
+  c_view_tool!
   coffee-rails (~> 4.2)
   devise (~> 4.4, >= 4.4.1)
   friendly_id (~> 5.1.0)
