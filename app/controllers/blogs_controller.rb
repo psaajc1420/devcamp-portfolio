@@ -1,7 +1,7 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
   layout 'blog'
-  access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
+  access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit, :toggle_status]}, site_admin: :all
 
   # GET /blogs
   def index
@@ -33,7 +33,7 @@ class BlogsController < ApplicationController
         format.html { redirect_to @blog, notice: 'Blog was successfully created.' }
       else
         format.html { render :new }
-        
+
       end
     end
   end
@@ -45,7 +45,7 @@ class BlogsController < ApplicationController
         format.html { redirect_to @blog, notice: 'Blog was successfully updated.' }
       else
         format.html { render :edit }
-        
+
       end
     end
   end
