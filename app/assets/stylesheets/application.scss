@@ -141,7 +141,18 @@ body {
   margin-right: 15px;
 }
 
+.tech-news {
+  color: black;
+  font-size: 14px;
+  margin: 20px;
+}
 
+.tech-news a {
+  color: blue;
+}
 
+.tech-news > .card {
+  padding: 15px;
+}
 
 
