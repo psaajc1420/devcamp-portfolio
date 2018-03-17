@@ -26,6 +26,8 @@ module DevcampPortfolio
     # -- all .rb files in that directory are automatically loaded.
 
     # Don't generate system test files.
+
+    config.eager_load_paths << Rails.root.join('lib')
     config.generators.system_tests = nil
   end
 end
