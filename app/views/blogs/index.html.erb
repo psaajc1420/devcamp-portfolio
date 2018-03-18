@@ -14,16 +14,16 @@
       </h3>
 
       <nav class="blog-pagination">
-        <%= link_to_previous_page @blogs, 'Older', class: "btn btn-outline-primary"  %>
-        <%= link_to_next_page @blogs, 'Newer', class: "btn btn-outline-primary" %>
+        <%= link_to_previous_page @blogs, 'Newer', class: "btn btn-outline-primary"  %>
+        <%= link_to_next_page @blogs, 'Older', class: "btn btn-outline-primary" %>
       </nav>
 
       <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
       <%= render @blogs %>
 
       <nav class="blog-pagination">
-        <%= link_to_previous_page @blogs, 'Older', class: "btn btn-outline-primary"  %>
-        <%= link_to_next_page @blogs, 'Newer', class: "btn btn-outline-primary" %>
+        <%= link_to_previous_page @blogs, 'Newer', class: "btn btn-outline-primary"  %>
+        <%= link_to_next_page @blogs, 'Older', class: "btn btn-outline-primary" %>
       </nav>
     </div>
 
