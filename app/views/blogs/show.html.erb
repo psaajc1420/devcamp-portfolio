@@ -10,7 +10,10 @@
 
       <%= render 'comments/comment_form' %>
 
-      <%= render @blog.comments %>
+      <div class="comments" data-blog-id="<%= @blog.id %>">
+        <%= render @blog.comments %>
+      </div>
+
     </div>
 
     <%= render 'shared/blog_sidebar' %>
