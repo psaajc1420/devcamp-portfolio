@@ -7,7 +7,7 @@
       <p> <%= @blog.topic.title %> </p>
       <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %> |
       <%= link_to 'Back', blogs_path %>
-      <p><%= @blog.body %></p>
+      <p><%= markdown @blog.body %></p>
 
       <%= render 'comments/comment_form' %>
 
